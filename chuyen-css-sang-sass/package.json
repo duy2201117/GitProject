@@ -1,0 +1,12 @@
+{
+  "name": "chuyen-css-sang-sass",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css",
+    "watch": "sass --watch scss/main.scss:css/main.css"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
