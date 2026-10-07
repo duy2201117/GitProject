@@ -1,0 +1,12 @@
+{
+  "name": "toi-uu-css-bang-sass-mixins-variables",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css --no-source-map",
+    "watch": "sass scss/main.scss css/main.css --watch --no-source-map"
+  },
+  "devDependencies": {
+    "sass": "^1.93.2"
+  }
+}
