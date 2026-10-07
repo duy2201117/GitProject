@@ -1,0 +1,14 @@
+@use "sass:math";
+@use "variables" as v;
+
+@mixin span($columns) {
+  width: math.percentage(math.div($columns, v.$grid-columns));
+}
+
+@mixin panel($height) {
+  background-color: v.$color-accent;
+  border: none;
+  width: 100%;
+  height: $height;
+}
+

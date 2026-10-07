@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: 250px;
+}
+.gridwrapper--header {
+  height: 90px;
+}
+.gridwrapper--content {
+  height: 230px;
+}
+.gridwrapper--footer {
+  height: 50px;
+}
+.gridwrapper--guide {
+  height: 370px;
+}
+
+.gridcontent {
+  width: 8.33%;
+  margin: 0;
+  border-right: 1px solid grey;
+  height: 100%;
+  float: left;
+  background-color: #f1f1f1;
+}
+.gridcontent--span-2 {
+  width: 16.6666666667%;
+}
+.gridcontent--span-3 {
+  width: 25%;
+}
+.gridcontent--span-4 {
+  width: 33.3333333333%;
+}
+.gridcontent--span-5 {
+  width: 41.6666666667%;
+}
+.gridcontent--span-6 {
+  width: 50%;
+}
+.gridcontent--span-7 {
+  width: 58.3333333333%;
+}
+.gridcontent--span-8 {
+  width: 66.6666666667%;
+}
+.gridcontent--span-9 {
+  width: 75%;
+}
+.gridcontent--span-10 {
+  width: 83.3333333333%;
+}
+.gridcontent--span-11 {
+  width: 91.6666666667%;
+}
+.gridcontent--span-12 {
+  width: 100%;
+}
+.gridcontent--plain {
+  background-color: #ffffff;
+  border: none;
+}
+.gridcontent--padded {
+  padding-top: 15px;
+}
+
+.preview {
+  position: absolute;
+  opacity: 0.9;
+  width: auto;
+  left: 8px;
+  right: 10px;
+}
+
+.grid-guide {
+  opacity: 0.1;
+}
+.grid-guide .gridcontent {
+  background-color: #ffffff;
+  border-right: 1px solid #000000;
+}
+.grid-guide .gridcontent:first-child {
+  border-left: 1px solid #000000;
+}
+
+.header-panel {
+  background: #9933cc;
+  border-right-color: transparent;
+}
+
+.footer-panel {
+  background: #0099cc;
+  border-right-color: transparent;
+}
+
+.menu-item {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 15%;
+  margin-bottom: 10px;
+}
+.menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.aside-panel {
+  background-color: #33b5e5;
+  border: none;
+  width: 100%;
+  height: 92%;
+}

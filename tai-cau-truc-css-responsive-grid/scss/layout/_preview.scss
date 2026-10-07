@@ -1,0 +1,23 @@
+@use "../abstracts/variables" as v;
+
+.preview {
+  position: absolute;
+  opacity: v.$preview-opacity;
+  width: auto;
+  left: v.$preview-left;
+  right: v.$preview-right;
+}
+
+.grid-guide {
+  opacity: v.$guide-opacity;
+
+  .gridcontent {
+    background-color: v.$color-surface;
+    border-right: 1px solid v.$color-guide;
+
+    &:first-child {
+      border-left: 1px solid v.$color-guide;
+    }
+  }
+}
+

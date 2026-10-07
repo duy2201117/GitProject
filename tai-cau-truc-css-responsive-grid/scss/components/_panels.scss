@@ -1,0 +1,26 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.header-panel {
+  background: v.$color-header;
+  border-right-color: transparent;
+}
+
+.footer-panel {
+  background: v.$color-footer;
+  border-right-color: transparent;
+}
+
+.menu-item {
+  @include m.panel(v.$menu-item-height);
+  margin-bottom: v.$menu-gap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.aside-panel {
+  @include m.panel(v.$aside-height);
+}
+

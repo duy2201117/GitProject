@@ -1,0 +1,14 @@
+{
+  "name": "responsive-grid-sass-refactor",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bài tập tái cấu trúc CSS của CodeGym responsive-grid sang SCSS",
+  "scripts": {
+    "build": "sass scss/main.scss css/main.css --no-source-map --style=expanded",
+    "watch": "sass --watch scss/main.scss:css/main.css --no-source-map --style=expanded"
+  },
+  "devDependencies": {
+    "sass": "^1.93.0"
+  }
+}
+

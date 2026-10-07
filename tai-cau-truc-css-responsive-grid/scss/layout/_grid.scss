@@ -1,0 +1,40 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.gridwrapper {
+  overflow: auto;
+  position: relative;
+  height: v.$default-row-height;
+
+  @each $name, $height in v.$row-heights {
+    &--#{$name} {
+      height: $height;
+    }
+  }
+}
+
+.gridcontent {
+  width: v.$single-column-width;
+  margin: 0;
+  border-right: 1px solid v.$color-border;
+  height: 100%;
+  float: left;
+  background-color: v.$color-grid;
+
+  // Sinh các lớp độ rộng thay vì viết lặp từng cột.
+  @for $columns from 2 through v.$grid-columns {
+    &--span-#{$columns} {
+      @include m.span($columns);
+    }
+  }
+
+  &--plain {
+    background-color: v.$color-surface;
+    border: none;
+  }
+
+  &--padded {
+    padding-top: v.$panel-padding-top;
+  }
+}
+
