@@ -1,0 +1,35 @@
+@use "variables" as v;
+
+.demo {
+  p {
+    max-width: 780px;
+    color: v.$muted;
+  }
+
+  &__box {
+    margin-top: 20px;
+    padding: 28px;
+    border-left: 6px solid v.$accent;
+    border-radius: 0 v.$radius v.$radius 0;
+    color: v.$primary-dark;
+    background: #fff7ed;
+    font-size: 20px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 820px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .hero {
+    padding: 52px 0;
+  }
+
+  .steps {
+    grid-template-columns: 1fr;
+  }
+}
