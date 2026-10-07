@@ -1,0 +1,14 @@
+{
+  "name": "thuc-hanh-sass-cli",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Bài thực hành cài đặt và sử dụng SASS bằng npm và SASS CLI",
+  "scripts": {
+    "sass": "sass scss/styles.scss css/styles.css",
+    "watch": "sass --watch scss:css",
+    "build": "sass --style=expanded --no-source-map scss:css"
+  },
+  "devDependencies": {
+    "sass": "latest"
+  }
+}
