@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.button {
+  @include m.button-style(v.$primary-color, v.$white);
+  @include m.transition(background, transform);
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    background: v.$primary-hover;
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
