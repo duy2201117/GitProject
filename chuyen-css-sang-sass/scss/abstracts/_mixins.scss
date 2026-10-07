@@ -1,0 +1,18 @@
+@mixin button-style($bg-color, $text-color: white) {
+  background: $bg-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@mixin box-shadow($shadow) {
+  box-shadow: $shadow;
+}
+
+@mixin transition($properties...) {
+  transition-property: $properties;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
