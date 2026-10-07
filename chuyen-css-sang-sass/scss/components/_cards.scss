@@ -1,0 +1,19 @@
+@use "../abstracts/variables" as v;
+@use "../abstracts/mixins" as m;
+
+.card {
+  border: 1px solid v.$border-color;
+  padding: 20px;
+  background: v.$white;
+  border-radius: v.$border-radius;
+  @include m.box-shadow(v.$box-shadow);
+
+  &__title {
+    margin-bottom: 8px;
+    color: v.$text-color;
+  }
+
+  &__text {
+    margin-bottom: 16px;
+  }
+}
